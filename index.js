@@ -48,7 +48,7 @@ function updateResponses() { //updates possible responses for the represented qu
     for(let i = 0; i < question.options.length; i++) {
         $(".responses").append(`
         <label for="answers">
-            <input type="radio" class="radio" name="answers" id="answers" value="${question.options[i]}" required /><span>${question.options[i]}</span>
+            <input type="radio" class="radio" name="answers" id="answers" value="${question.options[i]}" required /> <span>${question.options[i]}</span>
         </label>
         `);
     }
@@ -75,12 +75,12 @@ function submitAnswer() {
 }
 
 function ifAnswerCorrect() { //if the answer is correct
-    let html = "<p>CORRECT! Good Job!</p>"
+    let html = "<p class='correct'>CORRECT! Good Job!</p>"
     $(".feedback").html(html);
 } 
 
 function ifAnswerWrong(presentQuestionAnswer) { //if the answer is incorrect
-    let html = `<p>Sorry, the right answer is ${presentQuestionAnswer}.`
+    let html = `<p class='incorrect'>Sorry, the right answer is ${presentQuestionAnswer}.`
     $(".feedback").html(html);
 }
 
