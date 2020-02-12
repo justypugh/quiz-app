@@ -13,7 +13,6 @@ nav {
 fieldset {
     margin-left: auto;
     margin-right: auto;
-    height: max-content;
     width: 444px;
     display: flex;
     flex-direction: column;

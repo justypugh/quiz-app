@@ -10,18 +10,21 @@
 <body>
     <!-- Simple Nav Section -->
     <nav class="navbar">
-        <header role="header" class="header">Lord of the Rings Quiz!</header>
+        <header role="header" class="header"><h1>Lord of the Rings Quiz!</h1></header>
     </nav>
-    <main role="mainContent">
         <!-- Holds question information -->
-        <ul role="score" class="score">
-            <li class="outOf">Question: <span class="questionNumber">0</span>/5</li>
-            <li class="outOf">Score: <span class="totalScore">0</span></li>
+    <section class="scoreInformation">
+        <ul role="score" class="scoreInfo">
+            <li class="outOf">Question: <span class="currentQuestion">0</span>/5</li>
+            <li class="outOf">Score: <span class="score">0</span></li>
         </ul>
+    </section>
+
+    <main role="mainContent">
         <!-- Start View of Quiz -->
         <fieldset class="start">
             <div class="quiz-start">
-                <legend>(Start Page)Lord of the Rings Quiz</legend>
+                <legend>Lord of the Rings Quiz</legend>
                 <p>This quiz is to see how much you know about Lord of the Rings!</p>
             </div>
             <div class="controls">
@@ -29,40 +32,14 @@
             </div>
         </fieldset>
         <!-- View that will show during the quiz -->
-       <form action="">
-        <fieldset class="questions">
-            <div class="question">
-                <legend>(Questions Page)Who is arguably Frodo's best friend?</legend>
-            </div>
-            <div class="responses">
-                <label for="answers">
-                    <input type="radio" class="radio" name="answers" id="answers" value="" required><span>Answer1</span>
-                </label>
-                <label for="answers">
-                    <input type="radio" class="radio" name="answers" id="answers" value="" required><span>Answer2</span>
-                </label>
-                <label for="answers">
-                    <input type="radio" class="radio" name="answers" id="answers" value="" required><span>Answer3</span>
-                </label>
-                <label for="answers">
-                    <input type="radio" class="radio" name="answers" id="answers" value="" required><span>Answer4</span>
-                </label>                
-            </div>  
-            <div class="controls">
-                <button role="submitAnswer" class="submit-button">Submit</button>
-            </div>  
-        </form>            
-        </fieldset>
+        <section class="js-questions-and-answers">
+       
+        </section>
         <!-- view tht will show at the end of the quiz -->
-        <fieldset class="endOfQuiz">
-            <div class="quizEnd">
-                <legend>(Quiz finished Page)You have finished the quiz!</legend>
-                <h1>Your Score: </h1>
-            </div>
-            <div class="controls">
-                <button role="restartQuiz" class="restart-button">Restart</button>
-            </div>
-        </fieldset>
+        <section class="end">
+        
+        </section>
+
     </main>
     <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
