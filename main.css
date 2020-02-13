@@ -57,6 +57,7 @@ button {
     font-weight: 700;
     font-size: 15px;
     background-color: lightgray;
+    cursor: pointer;
 }
 
 .feedback {

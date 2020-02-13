@@ -47,8 +47,8 @@ function updateResponses() { //updates possible responses for the represented qu
     let question = STORE.questions[STORE.currentQuestion];
     for(let i = 0; i < question.options.length; i++) {
         $(".responses").append(`
-        <label for="answers">
-            <input type="radio" class="radio" name="answers" id="answers" value="${question.options[i]}" required /> <span>${question.options[i]}</span>
+        <label for="answers-${i}">
+            <input type="radio" class="radio" name="answers" id="answers-${i}" value="${question.options[i]}" required /> <span>${question.options[i]}</span>
         </label>
         `);
     }
