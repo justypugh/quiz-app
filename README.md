@@ -1,4 +1,4 @@
-# quiz-app
+# LOTR Quiz
 Quiz App for Thinkful
 Technology Stack: HTML, CSS, JavaScript, jQuery
 
